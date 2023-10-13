@@ -1,0 +1,15 @@
+name: 'Get Csproj Property'
+description: 'Get a property from a csproj file'
+inputs:
+  file:
+    description: 'Path to csproj file'
+    required: true
+  xpath:
+    description: 'XPath to desired property'
+    required: true
+outputs:
+  property:
+    description: 'The value of the csproj property'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
